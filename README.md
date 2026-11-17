@@ -15,8 +15,7 @@ An end-to-end, object-oriented machine learning pipeline that estimates early-ga
 | :--- | :---: | :---: | :--- |
 | **Logistic Regression (Baseline)** | 1 (`elo_diff`) | **0.21110** | Matches theoretical logistic Elo formulation |
 | **LightGBM (Default)** | 7 | 0.21207 | Overfits low-SNR opening/move features |
-| **LightGBM (Regularized)** | 7 | 0.21194 | Constrained with `max_depth=5`, `num_leaves=7`, `min_child_samples=100`, `learning_rate= 
-0.05`, `n_estimators=150`, `random_state=42`, `verbose=-1` |
+| **LightGBM (Regularized)** | 7 | 0.21194 | Constrained with `max_depth=5`, `num_leaves=7`, `min_child_samples=100`, `learning_rate= 0.05`, `n_estimators=150`, `random_state=42`, `verbose=-1` |
 | **Calibrated LightGBM (Sigmoid)** | 7 | **0.21168** | Post-hoc Platt Scaling improves probability reliability & sharpness |
 
 ## Key Quantitative Insights
@@ -39,7 +38,7 @@ An end-to-end, object-oriented machine learning pipeline that estimates early-ga
    ```bash
    python main.py
 
-##Future Improvements (V2.0)
+## Future Improvements (V2.0)
 
 1. Integrate python-chess to compute mid-game material balance and king safety metrics.
 
