@@ -1,0 +1,6 @@
+library required
+- pandas
+- numpy
+ -matplotlib
+- lighgbm
+- scikit-learn
